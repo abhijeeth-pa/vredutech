@@ -1,6 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 
-const GEMINI_API_KEY = "AIzaSyDde3Wm5q-54oBzx0GrmZwPloEHKkKZRSY"
+const GEMINI_API_KEY = "yourapikey"
 const GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent"
 
 async function retryWithBackoff(fn: () => Promise<Response>, maxRetries = 3): Promise<Response> {
